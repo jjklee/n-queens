@@ -79,6 +79,7 @@
     //
     // test if a specific row on this board contains a conflict
     hasRowConflictAt: function(rowIndex) {
+      
       var table = this.rows();
       var row = table[rowIndex];
       var count = 0;
