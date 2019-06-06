@@ -147,18 +147,19 @@
         col++;
       }
       return count > 1;
-    },
+    }, 
 
     // test if any major diagonals on this board contain conflicts
     hasAnyMajorDiagonalConflicts: function() {
       var table = this.rows();
-      var n = this.get('n');
-      for (let col = -n + 1; col < table.length - 1; col++) {
+      for (let col = -table.length + 1; col < table.length - 1; col++) {
         if (this.hasMajorDiagonalConflictAt(col)) {
           return true;
+          
         } 
       }
       return false;
+  
     },
 
 
